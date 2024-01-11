@@ -69,4 +69,92 @@ print(total_price) #300
 
 #if文
 score = 100
-if score == 100
+if score == 100:
+    print('よくできました！')
+    print('次も頑張りましょう') #必ず同じインデント
+
+if score != 0:
+    print('次回はIF文のテストです')
+
+#真偽値
+print(score == 100) # True
+print(score == 99)  # False
+
+# else
+score = 50
+if score == 100:
+     print('よくできました')
+else:
+     print('頑張りましょう')
+
+# elif 　いくつでも書ける
+score = 70
+if score == 100:
+     print('よくできました！')
+elif score >= 60:
+     print('まずまずです')
+elif score > 40:
+     print('んー')
+else:
+     print('頑張りましょう')
+
+# and
+time = 14
+if time > 10 and time <18:
+    print('就業時間です')
+
+# or
+time = 15
+if time == 10 or time == 15:
+    print('おやつの時間です')
+
+# not
+time = 9
+if not time == 18:
+     print('退社時刻ではありません')
+
+# andを使わない書き方
+time = 16
+if 10 < time < 18:
+     print('就業時間です')
+
+
+# お買い物代金の計算（１）
+apple_price = 200
+count = 5
+total_price = apple_price * count
+print('購入するりんごの個数は' + str(count) + '個です')
+print('支払い金額は' + str(total_price) + '円です')
+
+
+# お買い物代金の計算（２）
+apple_price = 200
+input_count = input('購入するりんごの個数を入力してください：')
+#変数input_countの値は文字列になっているのでintで数値に型変換
+count = int(input_count)
+total_price = apple_price * count
+print('購入するりんごの個数は' + str(count) + '個です')
+print('支払い金額は' + str(total_price) + '円です')
+
+
+# お買い物代金の計算（３）
+apple_price = 200
+money = 1000
+
+input_count = input('購入するりんごの個数を入力してください：')
+count = int(input_count)
+total_price = apple_price * count
+
+print('購入するりんごの個数は' + str(count) + '個です')
+print('支払い金額は' + str(total_price) + '円です')
+
+# money と total_price の比較結果によって条件を分岐
+if money > total_price:
+    print('りんごを' + str(count) + '個買いました')
+    print('残金は' + str(money - total_price) + '円です')
+elif money == total_price:
+    print('りんごを' + str(count) + '個買いました')
+    print('財布が空になりました')
+else: 
+    print('お金が足りません')
+    print('りんごを買えませんでした')
