@@ -158,3 +158,38 @@ elif money == total_price:
 else: 
     print('お金が足りません')
     print('りんごを買えませんでした')
+
+# リスト
+#　文字列のリスト
+    ['pasta', 'curry', 'sushi']
+# 数値のリスト
+    [1, 2, 3, 5, 7, 13, 21]
+# 文字列と数値のリスト
+    ['apple', 'banana', 200, 300]
+# 変数に代入
+    foods = ['pasta', 'curry', 'sushi']
+    print(foods)
+
+    print('好きな食べ物は' + foods[2] + 'です')
+
+# リストの要素を更新
+    foods[1] = 'pizza' #['pasta', 'pizza', 'sushi']
+
+# リストに要素を追加
+    foods.append('curry') #['pasta', 'pizza', 'sushi', 'curry']
+
+# for文
+    for food in foods:
+         print('好きな食べ物は' + food + 'です')
+
+# 辞書:リストとの違いは、個々の要素をインデックス番号ではなくキーと呼ばれる名前を付けて管理する点。キーと値のペアが1つの要素
+    fruits = {'apple':'red', 'banana':'yellow', 'grape':'purple'}
+    print(fruits)  # banana, apple, grapeというように順序がない Python 3.7以降は順序が保証
+
+# 辞書の要素の取り出し方
+    print('appleの色は' + fruits['apple'] + 'です') 
+
+# 辞書の要素の更新
+    fruits['apple'] = 'green'
+    print('appleの色は' + fruits['apple'] + 'です')
+
